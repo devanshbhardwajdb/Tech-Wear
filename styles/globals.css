@@ -1,27 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Livvic:wght@100;200;300;400;500;600;700;800;900');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/* .sidecart::-webkit-scrollbar{
+    display: hidden;
+} */
+.sidecart::-webkit-scrollbar {
+    display: block;
+    width: 4px;
+    
+    background: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.sidecart::-webkit-scrollbar-thumb {
+    background-color: #56E0DD;
+    
+    
+}
+body::-webkit-scrollbar {
+    display: block;
+    width: 6px;
+    background: #fff;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body::-webkit-scrollbar-thumb {
+    background-color: #a3a3a3;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* 
+.main{
+
+    background-image: url("../public/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
