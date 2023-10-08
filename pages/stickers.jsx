@@ -22,7 +22,7 @@ const Stickers = ({ products }) => {
 
                         return (
                             <div key={item._id} className='lg:w-[17vw] w-full max-lg:gap-8 p-6  bg-gray-300 rounded-xl hover:shadow-lg hover:shadow-gray-500 duration-150 transition-all h-auto font-livvic mb-5'>
-                                <Link href={`/Mugs/${item.slug}`}>
+                                <Link href={`${process.env.NEXT_PUBLIC_HOST}/Mugs/${item.slug}`}>
                                     <div>
                                         <div className=' overflow-hidden flex h-[35vh] justify-center bg-white'>
                                             <img alt="ecommerce" className="object-contain object-center " src={item.img} />

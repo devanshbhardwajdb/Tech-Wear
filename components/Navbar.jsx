@@ -97,10 +97,10 @@ const Navbar = ({ user, cart, setCart, addToCart, removeFromCart, clearCart, sub
         <div className="headings flex lg:gap-0 gap-1  items-center justify-center text-black max-md:hidden">
 
           <Link href={"/"} className={` rounded-lg transition-all duration-300 hover:scale- max-md:hidden py-4 px-8  ${page === "Home" ? "bg-gray-200  " : "hover:bg-gray-200"}`}><h4>HOME</h4></Link>
-          <Link href={"/tshirts"} className={`rounded-lg   transition-all duration-300 hover:scale-95 py-4 px-8  ${page === "Tshirts" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>TSHIRTS</h4></Link>
-          <Link href={"/hoodies"} className={`rounded-lg   transition-all duration-300 hover:scale-95 py-4 px-8  ${page === "Hoodies" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>HOODIES</h4></Link>
-          <Link href={"/mugs"} className={`rounded-lg   transition-all duration-300 hover:scale-95 py-4 px-8 ${page === "Mugs" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>MUGS</h4></Link>
-          <Link href={"/stickers"} className={`rounded-lg   transition-all duration-300 hover:scale-95 py-4 px-8  ${page === "Stickers" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>STICKERS</h4></Link>
+          <Link href={`${process.env.NEXT_PUBLIC_HOST}/tshirts`} className={`rounded-lg   transition-all duration-300 hover:scale-95 py-4 px-8  ${page === "Tshirts" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>TSHIRTS</h4></Link>
+          <Link href={`${process.env.NEXT_PUBLIC_HOST}/hoodies`} className={`rounded-lg   transition-all duration-300 hover:scale-95 py-4 px-8  ${page === "Hoodies" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>HOODIES</h4></Link>
+          <Link href={`${process.env.NEXT_PUBLIC_HOST}/mugs`} className={`rounded-lg   transition-all duration-300 hover:scale-95 py-4 px-8 ${page === "Mugs" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>MUGS</h4></Link>
+          <Link href={`${process.env.NEXT_PUBLIC_HOST}/stickers`} className={`rounded-lg   transition-all duration-300 hover:scale-95 py-4 px-8  ${page === "Stickers" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>STICKERS</h4></Link>
 
 
 
@@ -108,10 +108,10 @@ const Navbar = ({ user, cart, setCart, addToCart, removeFromCart, clearCart, sub
         <div className="headings flex gap-0 items-center justify-center text-black text-sm md:hidden">
 
 
-          <Link href={"/tshirts"} className={`rounded-lg   transition-all duration-300 hover:scale-95 px-3 py-2  ${page === "Tshirts" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>TSHIRTS</h4></Link>
-          <Link href={"/hoodies"} className={`rounded-lg   transition-all duration-300 hover:scale-95 px-3 py-2  ${page === "Hoodies" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>HOODIES</h4></Link>
-          <Link href={"/mugs"} className={`rounded-lg   transition-all duration-300 hover:scale-95 px-3 py-2 ${page === "Mugs" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>MUGS</h4></Link>
-          <Link href={"/stickers"} className={`rounded-lg   transition-all duration-300 hover:scale-95 px-3 py-2  ${page === "Stickers" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>STICKERS</h4></Link>
+          <Link href={`${process.env.NEXT_PUBLIC_HOST}/tshirts`} className={`rounded-lg   transition-all duration-300 hover:scale-95 px-3 py-2  ${page === "Tshirts" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>TSHIRTS</h4></Link>
+          <Link href={`${process.env.NEXT_PUBLIC_HOST}/hoodies`} className={`rounded-lg   transition-all duration-300 hover:scale-95 px-3 py-2  ${page === "Hoodies" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>HOODIES</h4></Link>
+          <Link href={`${process.env.NEXT_PUBLIC_HOST}/mugs`} className={`rounded-lg   transition-all duration-300 hover:scale-95 px-3 py-2 ${page === "Mugs" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>MUGS</h4></Link>
+          <Link href={`${process.env.NEXT_PUBLIC_HOST}/stickers`} className={`rounded-lg   transition-all duration-300 hover:scale-95 px-3 py-2  ${page === "Stickers" ? "bg-gray-200 " : "hover:bg-gray-200"}`}><h4>STICKERS</h4></Link>
 
 
 
@@ -142,8 +142,8 @@ const Navbar = ({ user, cart, setCart, addToCart, removeFromCart, clearCart, sub
                   onMouseOut={() => { setDropdown(false) }}
                   className="dropdown bg-gray-100 absolute right-0 max-lg:left-0  px-10  pt-6 pb-4 rounded-lg lg:rounded-tr-none gap-5 flex flex-col shadow-lg shadow-gray-400  z-30"
                 >
-                  <Link href={"/myaccount"} className='hover:text-[#56E0DD] hover:underline-offset-4  hover:underline transition-all duration-300 hover:scale-95'><h4>My Account</h4></Link>
-                  <Link href={"/orders"} className='hover:text-[#56E0DD] hover:underline-offset-4  hover:underline transition-all duration-300 hover:scale-95'><h4>My Orders</h4></Link>
+                  <Link href={`${process.env.NEXT_PUBLIC_HOST}/myaccount`} className='hover:text-[#56E0DD] hover:underline-offset-4  hover:underline transition-all duration-300 hover:scale-95'><h4>My Account</h4></Link>
+                  <Link href={`${process.env.NEXT_PUBLIC_HOST}/orders`} className='hover:text-[#56E0DD] hover:underline-offset-4  hover:underline transition-all duration-300 hover:scale-95'><h4>My Orders</h4></Link>
                   <button onClick={logout} className='nav-btn  bg-[#56E0DD] text-white px-5 py-2 rounded-lg  transition-all duration-150  hover:scale-95  hover:shadow-lg hover:shadow-gray-300 ' >Logout</button>
 
                 </div>

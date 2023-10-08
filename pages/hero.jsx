@@ -15,7 +15,7 @@ const Hero = () => {
                     </div>
                     <div className="flex flex-wrap   gap-3 justify-between">
                         <div className='lg:w-[17vw] w-full max-lg:gap-8 p-6  bg-gray-200 backdrop-blur-lg rounded-xl shadow-lg shadow-gray-500 hover:scale-105  duration-200 transition-all h-auto font-livvic mb-6'>
-                            <Link href={`/tshirts`}>
+                            <Link href={`${process.env.NEXT_PUBLIC_HOST}/tshirts`}>
                                 <div>
                                     <div className=' overflow-hidden flex h-[35vh] justify-center '>
                                         <img alt="ecommerce" className="object-contain object-center " src="https://www.teez.in/cdn/shop/products/Techperiodictabletshirt_1_large.jpg?v=1640676944" />
@@ -28,7 +28,7 @@ const Hero = () => {
                             </Link>
                         </div>
                         <div className='lg:w-[17vw] w-full max-lg:gap-8 p-6  bg-gray-200 backdrop-blur-lg rounded-xl shadow-lg shadow-gray-500 hover:scale-105  duration-200 transition-all h-auto font-livvic mb-6'>
-                            <Link href={`/hoodies`}>
+                            <Link href={`${process.env.NEXT_PUBLIC_HOST}/hoodies`}>
                                 <div>
                                     <div className=' overflow-hidden flex h-[35vh] justify-center '>
                                         <img alt="ecommerce" className="object-contain object-center " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWOlXq1T-DgcQzSSrx_HMgbrdlwQzzblD1w&usqp=CAU" />
@@ -41,7 +41,7 @@ const Hero = () => {
                             </Link>
                         </div>
                         <div className='lg:w-[17vw] w-full max-lg:gap-8 p-6  bg-gray-200 backdrop-blur-lg rounded-xl shadow-lg shadow-gray-500 hover:scale-105  duration-200 transition-all h-auto font-livvic mb-6'>
-                            <Link href={`/mugs`}>
+                            <Link href={`${process.env.NEXT_PUBLIC_HOST}/mugs`}>
                                 <div>
                                     <div className=' overflow-hidden flex h-[35vh] justify-center '>
                                         <img alt="ecommerce" className="object-contain object-center " src="https://rukminim2.flixcart.com/image/416/416/ky3b0y80/mug/e/w/c/ceramic-designer-computer-engg-printed-coffee-cup-mug-for-gift-original-imagaegyqzgck26z.jpeg?q=70" />
@@ -54,7 +54,7 @@ const Hero = () => {
                             </Link>
                         </div>
                         <div className='lg:w-[17vw] w-full max-lg:gap-8 p-6  bg-gray-200 backdrop-blur-lg rounded-xl shadow-lg shadow-gray-500 hover:scale-105  duration-200 transition-all h-auto font-livvic mb-6'>
-                            <Link href={`/stickers`}>
+                            <Link href={`${process.env.NEXT_PUBLIC_HOST}/stickers`}>
                                 <div>
                                     <div className=' overflow-hidden flex h-[35vh] justify-center '>
                                         <img alt="ecommerce" className="object-contain object-center " src="https://rukminim2.flixcart.com/image/416/416/kzvlua80/sticker/e/b/s/small-weeks-of-coding-laptop-skin-trackpad-vinyl-decal-stickers-original-imagbs6zqj2fzp2g.jpeg?q=70" />

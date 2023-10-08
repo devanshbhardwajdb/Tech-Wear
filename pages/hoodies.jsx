@@ -19,7 +19,7 @@ const Hoodies = ({ products }) => {
 
                         return (
                             <div key={item._id} className='lg:w-[17vw] w-full max-lg:gap-8 p-6  bg-gray-300 rounded-xl hover:shadow-lg hover:shadow-gray-500 duration-150 transition-all h-auto font-livvic mb-6'>
-                                <Link href={`/Product/${item.slug}`}>
+                                <Link href={`${process.env.NEXT_PUBLIC_HOST}/Product/${item.slug}`}>
                                     <div>
                                         <div className=' overflow-hidden flex h-[35vh] justify-center bg-white'>
                                             <img alt="ecommerce" className="object-contain object-center " src={item.img} />
