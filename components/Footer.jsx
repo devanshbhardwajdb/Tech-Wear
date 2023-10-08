@@ -11,7 +11,7 @@ const Footer = () => {
           <img src={img.src} alt='Logo' className='rounded-full' width={50} height={50}/>
             <span className="ml-3 text-xl">TechWear</span>
           </a>
-          <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 TechWear | 
+          <p className=" flex lg:flex-row flex-col items-center justify-center text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 TechWear | 
             <a href="/" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Developed by - Devansh Bhardwaj DB</a>
           </p>
           <span className=" sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start flex gap-3">

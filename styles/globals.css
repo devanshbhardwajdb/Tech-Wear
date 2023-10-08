@@ -51,3 +51,11 @@ input[type=number] {
     background-repeat: no-repeat;
     background-size: cover;
 } */
+
+.dropdown{
+    z-index: 99;
+}
+
+.sidecart{
+    z-index: 50;
+}
