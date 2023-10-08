@@ -122,7 +122,7 @@ const Address = ({ user, cart }) => {
         pauseOnHover
         theme="light"
       />
-      <div className='bg-gray-300  mt-28 max-md:mt-52 rounded-lg  lg:w-[40vw] w-full  p-5 mb-7'>
+      <div className='bg-gray-300  mt-28 max-md:mt-60 rounded-lg  lg:w-[40vw] w-full  p-5 mb-7'>
         <div>
           <h3 className='font-bold text-xl text-center'>Update Address</h3>
 
