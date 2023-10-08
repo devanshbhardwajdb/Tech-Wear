@@ -131,16 +131,15 @@ const Navbar = ({ user, cart, setCart, addToCart, removeFromCart, clearCart, sub
             user.value &&
             <div className='lg:relative '>
 
-              <div onMouseOver={() => { setDropdown(true) }} onMouseOut={() => { setDropdown(false) }} onClick={() => { setDropdown(prevState => !prevState); }} className=' cursor-pointer   p-3 flex items-center justify-center'>
-                <MdAccountCircle className='w-[35px] h-[35px] cursor-pointer ' />
+              <div  onClick={() => { setDropdown(prevState => !prevState); }} className=' cursor-pointer   p-3 flex items-center justify-center'>
+                <MdAccountCircle className={`w-[35px] h-[35px] cursor-pointer ${dropdown && "text-[#56E0DD]"} `} />
               </div>
 
               {dropdown &&
 
                 <div
-                  onMouseOver={() => { setDropdown(true) }}
-                  onMouseOut={() => { setDropdown(false) }}
-                  className="dropdown bg-gray-100 absolute right-0 max-lg:left-0  px-10  pt-6 pb-4 rounded-lg lg:rounded-tr-none gap-5 flex flex-col shadow-lg shadow-gray-400  z-30"
+                  
+                  className="dropdown bg-gray-100 absolute right-0 max-lg:left-0  px-10  pt-6 pb-4 rounded-lg lg:rounded-tr-none gap-5 flex flex-col shadow-lg shadow-gray-400  z-50"
                 >
                   <Link href={`${process.env.NEXT_PUBLIC_HOST}/myaccount`} className='hover:text-[#56E0DD] hover:underline-offset-4  hover:underline transition-all duration-300 hover:scale-95'><h4>My Account</h4></Link>
                   <Link href={`${process.env.NEXT_PUBLIC_HOST}/orders`} className='hover:text-[#56E0DD] hover:underline-offset-4  hover:underline transition-all duration-300 hover:scale-95'><h4>My Orders</h4></Link>
