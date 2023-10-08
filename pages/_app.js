@@ -148,7 +148,7 @@ export default function App({ Component, pageProps }) {
       />
       <div className='main relative'>
         {key && <Navbar key={key} cart={cart} setCart={setCart} addToCart={addToCart} removeFromCart={removeFromCart} clearCart={clearCart} subTotal={subTotal} setSubTotal={setSubTotal} user={user} logout={logout} />}
-        <Lottie animationData={A1} loop={true} className=' w-[100vw]  fixed  z-[-99]  opacity-40 max-md:hidden' />
+        {/* <Lottie animationData={A1} loop={true} className=' w-[100vw]  fixed  z-[-99]  opacity-40 max-md:hidden' /> */}
 
         <Component  {...pageProps} addToCart={addToCart} cart={cart} clearCart={clearCart} subTotal={subTotal} buyNow={buyNow} user={user} />
         <Footer />
