@@ -1,5 +1,7 @@
 TechWear is a E-commerce site where you can buy our products like Tshirts, Hoodies, Mugs, Stickers which are modified for the people who are in love with tech.
 
+Live site : https://tech-wear.vercel.app/
+
 Fully Developed by me (Devansh Bhardwaj)
 
 This website has all features as following : 
