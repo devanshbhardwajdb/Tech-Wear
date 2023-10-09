@@ -210,7 +210,7 @@ const Navbar = ({ user, cart, setCart, addToCart, removeFromCart, clearCart, sub
 
           <h3 className="text-gray-800  font-semibold mt-6 text-lg mb-1">Subtotal : ₹ {subTotal}</h3>
           <div className='flex justify-center mt-8 gap-6 max-md:flex-col'>
-            <Link href={`${process.env.NEXT_PUBLIC_HOST}/checkout`}><button disabled={Object.keys(cart).length === 0} className=' disabled:bg-gray-400 nav-btn  bg-[#56E0DD] text-white px-5 py-2 rounded-lg  transition-all duration-150  hover:scale-95  hover:shadow-lg hover:shadow-gray-300 ' >Check Out</button></Link>
+            <Link href={`${process.env.NEXT_PUBLIC_HOST}/checkout`}><button disabled={Object.keys(cart).length === 0} className=' disabled:bg-gray-400 nav-btn  bg-[#56E0DD] text-white px-5 py-2 rounded-lg  transition-all duration-150  hover:scale-95  hover:shadow-lg hover:shadow-gray-300 w-full' >Check Out</button></Link>
             <button disabled={Object.keys(cart).length === 0} onClick={clearCart} className='disabled:bg-gray-400 nav-btn  bg-[#56E0DD] text-white px-5 py-2 rounded-lg  transition-all duration-150  hover:scale-95  hover:shadow-lg hover:shadow-gray-300 ' >Clear Cart</button>
           </div>
 

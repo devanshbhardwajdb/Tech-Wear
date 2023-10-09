@@ -188,12 +188,12 @@ const Checkout = ({ cart, clearCart, subTotal, user }) => {
         id="razorpay-checkout-js"
         src="https://checkout.razorpay.com/v1/checkout.js"
       />
-      <div className='text-gray-600 font-livvic min-h-[100vh] lg:px-[8vw] pt-[20vh] px-6 mb-60'>
+      <div className='text-gray-600 font-livvic min-h-[100vh] lg:px-[8vw] max-lg:pt-[25vh] pt-[22vh] px-6 mb-60'>
 
 
 
 
-        <div className="flex  flex-col gap-5 lg:w-1/2 mt-10">
+        <div className="flex  flex-col gap-5   lg:w-1/2 mt-10">
 
           <h3 className='font-semibold text-lg'>1. Delivery Details</h3>
 
@@ -219,7 +219,7 @@ const Checkout = ({ cart, clearCart, subTotal, user }) => {
         </div>
         <div className='mt-10 flex flex-col gap-8'>
           <h3 className='font-semibold text-lg'>2. Review Cart Items</h3>
-          <div className="sidecart flex flex-col   " >
+          <div className=" flex flex-col   " >
 
 
 
@@ -230,21 +230,21 @@ const Checkout = ({ cart, clearCart, subTotal, user }) => {
             {
               Object.keys(cart).map((k) => {
 
-                return <div key={k} className='lg:w-1/2 bg-gray-300 p-6  rounded-xl hover:shadow-lg hover:shadow-gray-500 duration-150 transition-all   mb-6 '>
-                  <Link href={"/Product/tshirts"} className='flex justify-between'>
+                return <div key={k} className='lg:w-1/2 bg-gray-300 p-6  rounded-xl hover:shadow-lg hover:shadow-gray-500 duration-150 transition-all   mb-6 flex justify-between '>
 
-                    <a className=" rounded flex justify-start ">
-                      <img alt="ecommerce" className="object-contain object-top w-1/2 " src={cart[k].img} />
-                    </a>
-                    <div className="mt-4  flex flex-col">
-                      <h3 className="text-gray-500 text-xs mb-1">{cart[k].name}</h3>
 
-                      <p className="mt-1">₹{cart[k].price}</p>
-                      <p className="mt-1">Qty. {cart[k].qty}</p>
+                  <a className=" rounded flex justify-start ">
+                    <img alt="ecommerce" className="object-contain object-top w-1/2 " src={cart[k].img} />
+                  </a>
+                  <div className="mt-4  flex flex-col">
+                    <h3 className="text-gray-500 text-xs mb-1">{cart[k].name}</h3>
 
-                    </div>
+                    <p className="mt-1">₹{cart[k].price}</p>
+                    <p className="mt-1">Qty. {cart[k].qty}</p>
 
-                  </Link>
+                  </div>
+
+
 
 
                 </div>

@@ -85,7 +85,7 @@ const Post = ({ buyNow, addToCart, product, variants, error }) => {
 
   return (
     <div>
-      <section className="text-gray-600 body-font overflow-hidden max-sm:pt-24 max-lg:pt-24 min-h-[100vh] font-livvic">
+      <section className="text-gray-600 body-font overflow-hidden max-lg:pt-44 pt-16 min-h-[100vh] font-livvic">
         <div className="container px-5 py-24 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap justify-center">
             <div className='w-1/2 justify-center flex '>
