@@ -122,7 +122,7 @@ export default function App({ Component, pageProps }) {
   }
 
   const clearCart = () => {
-    console.log("cart cleared ")
+    
     setCart({})
     saveCart({})
   }

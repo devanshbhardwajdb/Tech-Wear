@@ -41,6 +41,8 @@ const Forgot = ({ user }) => {
   // console.log(window)
 
   const onCaptchaVerify = () => {
+
+
     if (!window.recaptchaVerifier) {
       window.recaptchaVerifier = new RecaptchaVerifier(auth, 'recaptcha-container', {
         'size': 'invisible',
@@ -84,8 +86,7 @@ const Forgot = ({ user }) => {
       const data = await a.json();
 
       if (data.success) {
-        setShowOTP(true)
-        setLoading(false);
+
         onSignup();
 
       } else {
@@ -113,15 +114,18 @@ const Forgot = ({ user }) => {
     onCaptchaVerify();
 
     const appVerifier = window.recaptchaVerifier
-    
+
 
     const formatPh = "+91" + phone
+
+
     signInWithPhoneNumber(auth, formatPh, appVerifier)
       .then((confirmationResult) => {
 
         window.confirmationResult = confirmationResult;
-        
 
+        setShowOTP(true)
+        setLoading(false);
         toast.success("OTP has been sent successfully to your number", {
           position: "top-center",
           autoClose: 2500,
@@ -246,10 +250,7 @@ const Forgot = ({ user }) => {
 
     <>
 
-      <Script
 
-        src="https://smtpjs.com/v3/smtp.js"
-      />
       <Head><title>Forgot Password</title></Head>
 
       <div className='min-h-[100vh]  flex justify-center items-center font-livvic  max-md:px-6 max-md:pt-12'>

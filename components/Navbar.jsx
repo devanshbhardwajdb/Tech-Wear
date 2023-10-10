@@ -56,7 +56,7 @@ const Navbar = ({ user, cart, setCart, addToCart, removeFromCart, clearCart, sub
 
 
   }, [])
-  console.log(page)
+
 
   useEffect(() => {
     const navbarHeight = document.getElementById('navbar').offsetHeight;
